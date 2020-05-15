@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Calculator operations suite]" parallel="tests">
+  <listeners>
+    <listener class-name="listeners.TestListeners"/>
+  </listeners>
+  <test thread-count="2" name="RegressionTests(failed)" parallel="tests">
+    <parameter name="Login/Registration" value="Вход/регистрация"/>
+    <parameter name="BookMarks" value="Закладки"/>
+    <parameter name="Discount system" value="Система скидок"/>
+    <parameter name="Payment" value="Оплата"/>
+    <parameter name="Warranty" value="Гарантия"/>
+    <parameter name="Products Comparasion" value="Сравнение товаров"/>
+    <parameter name="Basket" value="Корзина"/>
+    <parameter name="Delivery" value="Доставка"/>
+    <classes>
+      <class name="tests.VerifyHeaderButtonsAreClickable">
+        <methods>
+          <include name="testBookmarksPageIsDisplayed"/>
+          <include name="setUp"/>
+          <include name="closeDown"/>
+          <include name="testWishListPageIsDisplayed"/>
+        </methods>
+      </class> <!-- tests.VerifyHeaderButtonsAreClickable -->
+    </classes>
+  </test> <!-- RegressionTests(failed) -->
+</suite> <!-- Failed suite [Calculator operations suite] -->
