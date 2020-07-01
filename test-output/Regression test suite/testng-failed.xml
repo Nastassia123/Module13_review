@@ -18,9 +18,45 @@
         <methods>
           <include name="setUp"/>
           <include name="closeDown"/>
-          <include name="testLoginOption" invocation-numbers="0"/>
+          <include name="testLoginOption"/>
         </methods>
       </class> <!-- tests.VerifyLoginFunctionality -->
+      <class name="tests.VerifyProductsCatalogOptions">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeDown"/>
+          <include name="testChooseProductFromCatalog"/>
+        </methods>
+      </class> <!-- tests.VerifyProductsCatalogOptions -->
+      <class name="tests.VerifyHeaderButtonsAreClickable">
+        <methods>
+          <include name="testBookmarksPageIsDisplayed"/>
+          <include name="setUp"/>
+          <include name="testDeliveryPageIsDisplayed"/>
+          <include name="testBasketPageIsDisplayed"/>
+          <include name="testPaymentPageIsDisplayed"/>
+          <include name="closeDown"/>
+          <include name="testDiscountSystemPageIsDisplayed"/>
+          <include name="testWarrantyPageIsDisplayed"/>
+          <include name="testWishListPageIsDisplayed"/>
+          <include name="testComparasionListPageIsDisplayed"/>
+          <include name="testLoginWindowIsDisplayed"/>
+        </methods>
+      </class> <!-- tests.VerifyHeaderButtonsAreClickable -->
+      <class name="tests.VerifyProductIsAddedToCard">
+        <methods>
+          <include name="setUp"/>
+          <include name="testAdditionProductToCard"/>
+          <include name="closeDown"/>
+        </methods>
+      </class> <!-- tests.VerifyProductIsAddedToCard -->
+      <class name="tests.VerifyProductAdditionToComparasionList">
+        <methods>
+          <include name="testProductAdditionToTheList"/>
+          <include name="setUp"/>
+          <include name="closeDown"/>
+        </methods>
+      </class> <!-- tests.VerifyProductAdditionToComparasionList -->
     </classes>
   </test> <!-- RegressionTests(failed) -->
 </suite> <!-- Failed suite [Regression test suite] -->

@@ -1,9 +1,10 @@
 package pages;
 
-import pages.basepagesconfiguration.BasePageClass;
+//import org.apache.xpath.operations.String;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import pages.basepagesconfiguration.BasePageClass;
 
 
 public class MainPage extends BasePageClass {
@@ -16,6 +17,8 @@ public class MainPage extends BasePageClass {
     private static final String DPI_AND_CPI_RESOLUTION_VALUE = "23000";
 
     private static final By BUY_PRODUCT_BUTTON = By.className("item-buy-btn");
+
+
 
     private static final By CLOSE_BUTTON_WINDOW_LOCATOR = By.xpath("//div[@id='notification-type']//button[contains(@class,'close')]");
 

@@ -6,6 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import io.qameta.allure.Attachment;
 import org.testng.ITestResult;
 import org.testng.log4testng.Logger;
 import pages.basepagesconfiguration.BasePageClass;
@@ -35,6 +36,7 @@ public class TestListeners extends BasePageClass implements ITestListener {
      takeScreenshot();
 
     }
+
 
 
 

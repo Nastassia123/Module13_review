@@ -1,5 +1,6 @@
 package pages.basepagesconfiguration;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,8 @@ import org.testng.log4testng.Logger;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class BasePageClass {
@@ -37,8 +40,10 @@ public class BasePageClass {
             e.printStackTrace();
         }     }
 
+
+
     public WebDriver initializeDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\D\\SeleniumDrivers\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\D\\SeleniumDrivers\\chromedriver_win32_2\\chromedriver.exe");
         driver = new ChromeDriver();
         maximizeWindow();
         return driver;
